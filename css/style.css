@@ -317,6 +317,7 @@ button {
     a {
         text-decoration: none;
         color: rgb(57, 35, 181);
+
     }
 
 
@@ -751,6 +752,27 @@ button {
         color: aliceblue;
         font-size: 9px;
         padding-left: 40px;
+
+
+
+    }
+
+    /*animaciones*/
+
+
+    .navega:hover {
+
+        padding-left: 80px;
+        -webkit-transition: calc(0.6s);
+
+
+    }
+
+    .menufooter:hover {
+
+        padding-right: 75px;
+        -webkit-transition: calc(0.6s);
+
 
 
 
@@ -1423,5 +1445,102 @@ button {
 
 
     }
+
+
+    /*animaciones*/
+
+
+    .navega:hover {
+
+        padding-bottom: 50px;
+        -webkit-transition: calc(0.6s);
+
+
+    }
+
+    .menufooter:hover {
+
+        padding-right: 75px;
+        -webkit-transition: calc(0.6s);
+
+
+
+
+    }
+
+    .imagen1:hover {
+
+        transform: scale(2, 1.5);
+
+    }
+
+    .imagen2:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen3:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen4:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen5:hover {
+
+        transform: scale;
+
+    }
+
+    .imagen6:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen7:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen8:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen1:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen11:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen10:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen12:hover {
+
+        transform: scale(2, 1.5);
+
+    }
+
+
+
 
 }
