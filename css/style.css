@@ -25,7 +25,6 @@ button {
     #grilla {
         display: grid;
         height: 1400px;
-        width: auto;
         grid-template-columns: 100%;
         grid-template-areas: "header"
             "video"
@@ -43,34 +42,6 @@ button {
         grid-area: header;
     }
 
-    nav {
-
-        background-color: rgb(126, 5, 5);
-        background-repeat: no-repeat
-    }
-
-    ul {
-        height: 250px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: transparent;
-        border-style: groove;
-        border-color: black;
-
-
-    }
-
-    li {
-
-        color: black;
-        font-size: x-large;
-        font-family: fantasy;
-        font-weight: bolder;
-        list-style: none;
-
-    }
 
     a {
         text-decoration: none;
@@ -159,34 +130,6 @@ button {
     }
 
 
-    nav {
-
-        background-color: rgb(126, 5, 5);
-        background-repeat: no-repeat
-    }
-
-
-    ul {
-        height: 250px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: transparent;
-        border-style: groove;
-
-
-    }
-
-    li {
-
-        color: black;
-        font-size: x-large;
-        font-family: fantasy;
-        font-weight: bolder;
-        list-style: none;
-
-    }
 
     a {
         text-decoration: none;
@@ -285,38 +228,11 @@ button {
         grid-area: header;
     }
 
-    nav {
-
-        background-color: rgb(126, 5, 5);
-        background-repeat: no-repeat
-    }
-
-    ul {
-        height: 250px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: transparent;
-        border-style: groove;
-        border-color: black;
-
-
-    }
-
-    li {
-
-        color: black;
-        font-size: x-large;
-        font-family: fantasy;
-        font-weight: bolder;
-        list-style: none;
-
-    }
 
     a {
         text-decoration: none;
         color: rgb(57, 35, 181);
+
     }
 
 
@@ -390,7 +306,7 @@ button {
 
         background-color: rgb(218, 218, 218);
         background-repeat: repeat;
-        height: 600px;
+        height: 1200px;
 
 
     }
@@ -444,16 +360,10 @@ button {
         display: grid;
         height: 1400px;
         width: auto;
-        grid-template-columns: 50% 50%;
-        grid-template-areas: "header header"
-            "h1 h1"
-            "imagen1 imagen2"
-            "imagen3 imagen4"
-            "imagen5 imagen6"
-            "imagen7 imagen8"
-            "imagen9 imagen10"
-            "imagen11 imagen12"
-            "footer footer";
+        grid-template-columns: 100%;
+        grid-template-areas: "header"
+            "h1"
+            " footer";
         align-content: space-around;
         justify-content: space-evenly;
         background-color: rgb(255, 255, 255);
@@ -466,34 +376,7 @@ button {
         grid-area: header;
     }
 
-    nav {
 
-        background-color: rgb(126, 5, 5);
-        background-repeat: no-repeat
-    }
-
-    ul {
-        height: 250px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        border-style: groove;
-        border-color: black;
-
-
-    }
-
-    li {
-
-        color: black;
-        font-size: x-large;
-        font-family: fantasy;
-        font-weight: bolder;
-        list-style: none;
-
-    }
 
     a {
         text-decoration: none;
@@ -520,89 +403,6 @@ button {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
-    .imagen1 {
-
-        grid-area: imagen1;
-
-
-    }
-
-    .imagen2 {
-
-        grid-area: imagen2;
-
-    }
-
-    .imagen3 {
-
-        grid-area: imagen3;
-
-    }
-
-
-    .imagen4 {
-
-        grid-area: imagen4;
-
-    }
-
-
-
-    .imagen5 {
-
-        grid-area: imagen5;
-
-    }
-
-    .imagen6 {
-
-        grid-area: imagen6;
-
-    }
-
-
-
-    .imagen7 {
-
-        grid-area: imagen7;
-
-    }
-
-
-    .imagen8 {
-
-        grid-area: imagen8;
-
-    }
-
-
-    .imagen9 {
-
-        grid-area: imagen9;
-
-    }
-
-
-    .imagen10 {
-
-        grid-area: imagen10;
-
-    }
-
-
-
-    .imagen11 {
-
-        grid-area: imagen11;
-
-    }
-
-
-    .imagen12 {
-
-        grid-area: imagen12;
-
-    }
 
 
     .logo {
@@ -658,34 +458,7 @@ button {
         grid-area: header;
     }
 
-    nav {
 
-        background-color: rgb(126, 5, 5);
-        background-repeat: no-repeat
-    }
-
-    ul {
-        height: 250px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        border-style: groove;
-        border-color: black;
-
-
-    }
-
-    li {
-
-        color: black;
-        font-size: x-large;
-        font-family: fantasy;
-        font-weight: bolder;
-        list-style: none;
-
-    }
 
     .contenedorproductos {
         text-decoration: overline;
@@ -756,6 +529,27 @@ button {
 
     }
 
+    /*animaciones*/
+
+
+    .navega:hover {
+
+        padding-left: 80px;
+        -webkit-transition: calc(0.6s);
+
+
+    }
+
+    .menufooter:hover {
+
+        padding-right: 75px;
+        -webkit-transition: calc(0.6s);
+
+
+
+
+    }
+
 
 }
 
@@ -792,33 +586,7 @@ button {
 
     }
 
-    nav {
 
-        background-color: rgb(126, 5, 5);
-        width: 100vw;
-        background-repeat: repeat;
-
-    }
-
-    ul {
-        height: 300px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        border-style: inset;
-        border-color: transparent;
-    }
-
-    li {
-
-        color: black;
-        font-size: x-large;
-        font-family: fantasy;
-        font-weight: bolder;
-        list-style: none;
-
-    }
 
     a {
         text-decoration: none;
@@ -907,25 +675,7 @@ button {
 
 
 
-    ul {
-        height: 300px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        border-style: inset;
-        border-color: transparent;
-    }
 
-    li {
-
-        color: black;
-        font-size: x-large;
-        font-family: fantasy;
-        font-weight: bolder;
-        list-style: none;
-
-    }
 
     a {
         text-decoration: none;
@@ -963,7 +713,7 @@ button {
     .historia {
         grid-area: historia;
         background-color: rgb(227, 227, 227);
-        width: 650px;
+      width: 650px;
     }
 
     .fotos {
@@ -974,11 +724,11 @@ button {
 
         text-align: center;
 
+
     }
 
     #nosparrafo {
 
-        margin-top: 50px;
         font-size: larger;
         font-family: serif;
         text-align: center;
@@ -1046,7 +796,7 @@ button {
         background-repeat: repeat;
         background-size: 100vw;
         opacity: 85%;
-        height: 720px;
+        height: 680px;
         display: flow-root;
         border: none;
 
@@ -1081,7 +831,7 @@ button {
 
 
         background-color: rgb(218, 218, 218);
-        height: 500px;
+        height: 800px;
 
 
     }
@@ -1138,30 +888,6 @@ button {
 
     }
 
-    nav {
-
-        background-color: rgb(126, 5, 5);
-        background-repeat: repeat
-    }
-
-    ul {
-        height: 300px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        border-style: inset;
-        border-color: transparent;
-    }
-
-    li {
-
-        color: black;
-        font-size: x-large;
-        font-family: fantasy;
-        font-weight: bolder;
-        list-style: none;
-    }
 
     a {
         text-decoration: none;
@@ -1179,92 +905,8 @@ button {
 
     h1 {
         grid-area: h1;
-        margin-top: 5px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    .imagen1 {
-
-        grid-area: imagen1;
-
-
-    }
-
-    .imagen2 {
-
-        grid-area: imagen2;
-
-    }
-
-    .imagen3 {
-
-        grid-area: imagen3;
-
-    }
-
-
-    .imagen4 {
-
-        grid-area: imagen4;
-
-    }
-
-
-
-    .imagen5 {
-
-        grid-area: imagen5;
-
-    }
-
-    .imagen6 {
-
-        grid-area: imagen6;
-
-    }
-
-
-
-    .imagen7 {
-
-        grid-area: imagen7;
-
-    }
-
-
-    .imagen8 {
-
-        grid-area: imagen8;
-
-    }
-
-
-    .imagen9 {
-
-        grid-area: imagen9;
-
-    }
-
-
-    .imagen10 {
-
-        grid-area: imagen10;
-
-    }
-
-
-
-    .imagen11 {
-
-        grid-area: imagen11;
-
-    }
-
-
-    .imagen12 {
-
-        grid-area: imagen12;
-
+        width: 99vw;
     }
 
 
@@ -1278,7 +920,7 @@ button {
     footer {
         grid-area: footer;
         background-color: rgba(104, 0, 0, 0.968);
-        height: 150px;
+        height: 220px;
 
     }
 
@@ -1323,31 +965,6 @@ button {
         grid-area: header;
     }
 
-    nav {
-
-        background-color: rgb(126, 5, 5);
-        background-repeat: repeat
-    }
-
-    ul {
-        height: 300px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        border-style: inset;
-        border-color: transparent;
-    }
-
-    li {
-
-        color: black;
-        font-size: x-large;
-        font-family: fantasy;
-        font-weight: bolder;
-        list-style: none;
-
-    }
 
     .contenedorproductos {
         text-decoration: overline;
@@ -1424,4 +1041,117 @@ button {
 
     }
 
+
+    /*animaciones*/
+
+
+    .navega:hover {
+
+        padding-bottom: 50px;
+        -webkit-transition: calc(0.6s);
+
+
+    }
+
+    .menufooter:hover {
+
+        padding-right: 75px;
+        -webkit-transition: calc(0.6s);
+
+
+
+
+    }
+
+    .imagen1:hover {
+
+        transform: scale(2, 1.5);
+
+    }
+
+    .imagen2:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen3:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen4:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen5:hover {
+
+        transform: scale;
+
+    }
+
+    .imagen6:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen7:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen8:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen1:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen11:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen10:hover {
+
+        transform: scale(1.5);
+
+    }
+
+
+
+    .imagen12:hover {
+
+        transform: scale(2, 1.5);
+
+    }
+
+
+
+        /* boostrap */
+
+        #carouselExampleControls{
+            width: 99vw;
+
+        }
+
+        .marcas{
+
+            width: 99vw;
+            height: 550px;
+
+        }
 }
+
+
