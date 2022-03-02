@@ -713,7 +713,7 @@ button {
     .historia {
         grid-area: historia;
         background-color: rgb(227, 227, 227);
-      width: 650px;
+        width: 650px;
     }
 
     .fotos {
@@ -1139,19 +1139,17 @@ button {
 
 
 
-        /* boostrap */
+    /* boostrap */
 
-        #carouselExampleControls{
-            width: 99vw;
+    #carouselExampleControls {
+        width: 99vw;
 
-        }
+    }
 
-        .marcas{
+    .marcas {
 
-            width: 99vw;
-            height: 550px;
+        width: 99vw;
+        height: 550px;
 
-        }
+    }
 }
-
-
