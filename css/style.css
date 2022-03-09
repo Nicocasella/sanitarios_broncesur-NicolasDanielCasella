@@ -121,6 +121,7 @@ button {
 
 }
 
+
 /* Xs SM*/
 
 @media only screen and (max-width:600px) {
@@ -339,6 +340,7 @@ button {
         text-decoration: none;
         color: rgb(57, 35, 181);
 
+
     }
 
 
@@ -547,17 +549,22 @@ button {
     }
 
 
+    .contenedorproductos:hover {
+        text-decoration: overline;
+        color: rgb(0, 0, 0);
+
+    }
 
     .contenedorproductos {
         text-decoration: overline;
-        color: rgb(81, 0, 255);
+        color: rgb(255, 255, 255);
 
     }
 
     .contenedorlinks {
 
-        background-image: url(../img/background2.jpg);
-        height: 400px;
+        background-image: url(../img/istockphoto-519914916-1024x1024.jpg);
+        height: 600px;
     }
 
 
@@ -647,8 +654,8 @@ button {
 
     .marcas {
 
-     width: 99vw;
-     height: 200px;
+        width: 99vw;
+        height: 200px;
 
     }
 
@@ -815,6 +822,7 @@ button {
         grid-area: historia;
         background-color: rgb(227, 227, 227);
         width: 650px;
+        height: 365px;
     }
 
     .fotos {
@@ -1068,8 +1076,22 @@ button {
 
 
     .contenedorproductos {
+
         text-decoration: overline;
-        color: rgb(81, 0, 255);
+        color: rgb(0, 0, 0);
+        font-weight: bolder;
+
+
+    }
+
+    .contenedorproductos:hover {
+
+        text-decoration: overline;
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+
+
+
 
 
 
@@ -1077,11 +1099,12 @@ button {
 
     .contenedorlinks {
 
-        background-image: url(../img/background2.jpg);
+        background-image: url(../img/istockphoto-519914916-1024x1024.jpg);
         height: 600px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+
     }
 
 
@@ -1239,7 +1262,6 @@ button {
     }
 
 
-
     /* boostrap */
 
     #carouselExampleControls {
@@ -1249,10 +1271,11 @@ button {
 
     .marcas {
 
-     width: 99vw;
-     height: 550px;
+        width: 99vw;
+        height: 550px;
 
     }
 
 
 }
+
