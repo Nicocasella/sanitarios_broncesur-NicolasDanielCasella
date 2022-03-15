@@ -1,1281 +1,654 @@
-* {
-    margin: 0%;
-    padding: 0%;
-
-}
-
-
-
-button {
-    background-color: grey;
-
-
-
-}
-
-
-.navbar {
-    background-color: #9f0404;
-}
-
-.navbar .navbar-brand {
-    color: #000000;
-}
-
-.navbar .navbar-brand:hover,
-.navbar .navbar-brand:focus {
-    color: #00cccc;
-}
-
-.navbar .navbar-text {
-    color: #000000;
-}
-
-.navbar .navbar-text a {
-    color: #00cccc;
-}
-
-.navbar .navbar-text a:hover,
-.navbar .navbar-text a:focus {
-    color: #00cccc;
-}
-
-.navbar .navbar-nav .nav-link {
-    color: #000000;
-    border-radius: .25rem;
-    margin: 0 0.25em;
-}
-
-.navbar .navbar-nav .nav-link:not(.disabled):hover,
-.navbar .navbar-nav .nav-link:not(.disabled):focus {
-    color: #00cccc;
-}
-
-.navbar .navbar-nav .nav-item.active .nav-link,
-.navbar .navbar-nav .nav-item.active .nav-link:hover,
-.navbar .navbar-nav .nav-item.active .nav-link:focus,
-.navbar .navbar-nav .nav-item.show .nav-link,
-.navbar .navbar-nav .nav-item.show .nav-link:hover,
-.navbar .navbar-nav .nav-item.show .nav-link:focus {
-    color: #00cccc;
-    background-color: #f3f2f4;
-}
-
-.navbar .navbar-toggler {
-    border-color: #f3f2f4;
-}
-
-.navbar .navbar-toggler:hover,
-.navbar .navbar-toggler:focus {
-    background-color: #f3f2f4;
-}
-
-.navbar .navbar-toggler .navbar-toggler-icon {
-    color: #000000;
-}
-
-.navbar .navbar-collapse,
-.navbar .navbar-form {
-    border-color: #000000;
-}
-
-.navbar .navbar-link {
-    color: #000000;
-}
-
-.navbar .navbar-link:hover {
-    color: #00cccc;
-}
-
-@media only screen and (max-width:600px) {
-    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
-        color: #000000;
-    }
-
-    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-        color: #00cccc;
-    }
-
-    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
-        color: #00cccc;
-        background-color: #f3f2f4;
-    }
-
-}
-
-@media only screen and (min-width:600px) {
-    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
-        color: #000000;
-    }
-
-    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-        color: #00cccc;
-    }
-
-    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
-        color: #00cccc;
-        background-color: #f3f2f4;
-    }
-
-}
-
-
-/* Xs SM*/
-
-@media only screen and (max-width:600px) {
-
-
-    /*index*/
-
-    #grilla {
-        display: grid;
-        height: 1400px;
-        grid-template-columns: 100%;
-        grid-template-areas: "header"
-            "video"
-            "map"
-            "footer";
-        align-content: space-around;
-        justify-content: space-evenly;
-        background-color: rgb(255, 255, 255);
-
-    }
-
-
-    header {
-
-        grid-area: header;
-    }
-
-
-    a {
-        text-decoration: none;
-        color: rgb(57, 35, 181);
-    }
-
-
-    .video {
-        grid-area: video;
-        height: 500px;
-        width: 100%;
-
-    }
-
-
-    .map {
-
-        grid-area: map;
-        height: 200px;
-        width: 100%;
-
-    }
-
-
-    body {
-
-        background-color: rgb(253, 253, 255);
-
-    }
-
-    img {
-
-        max-width: 100vw;
-
-    }
-
-
-    footer {
-        grid-area: footer;
-        background-color: rgba(104, 0, 0, 0.968);
-
-    }
-
-    .menufooter {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        font-size: 15px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    }
-
-    #rigths {
-        color: aliceblue;
-        font-size: 9px;
-        padding-left: 40px;
-
-
-    }
-
-
-
-
-
-    /*pagina nosotros*/
-
-    #grillanosotros {
-        display: grid;
-        height: 1400px;
-        width: auto;
-        grid-template-columns: 100%;
-        grid-template-areas: "header"
-            "imagen1 "
-            "imagen2"
-            "imagen3"
-            "historia"
-            "footer";
-        background-color: rgb(255, 255, 255);
-
-    }
-
-
-
-    header {
-        grid-area: header;
-    }
-
-
-
-    a {
-        text-decoration: none;
-        color: rgb(57, 35, 181);
-    }
-
-
-
-    body {
-
-        background-color: rgb(253, 253, 255);
-
-    }
-
-
-    .imagen1 {
-        grid-area: imagen1;
-        padding-top: 10px;
-    }
-
-    .imagen2 {
-        grid-area: imagen2;
-        padding-top: 5px;
-
-    }
-
-
-    .imagen3 {
-        grid-area: imagen3;
-        padding-top: 5px;
-
-
-    }
-
-    .historia {
-        grid-area: historia;
-        background-color: azure;
-        text-align: justify;
-        padding-left: 10px;
-        padding-right: 10px;
-
-    }
-
-    h1 {
-
-        text-align: center;
-
-    }
-
-
-    footer {
-        grid-area: footer;
-        background-color: rgba(104, 0, 0, 0.968);
-
-    }
-
-    .menufooter {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        font-size: 15px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    }
-
-    #rigths {
-        color: aliceblue;
-        font-size: 9px;
-        padding-left: 40px;
-
-
-    }
-
-
-
-    /*pagina clientes*/
-
-
-    #grillaclientes {
-        display: grid;
-        height: 1400px;
-        width: auto;
-        grid-template-columns: 100%;
-        grid-template-areas: "header"
-            "main"
-            "footer";
-        align-content: space-around;
-        justify-content: space-evenly;
-        background-color: rgb(255, 255, 255);
-
-    }
-
-
-    header {
-
-        grid-area: header;
-    }
-
-
-    a {
-        text-decoration: none;
-        color: rgb(57, 35, 181);
-
-
-    }
-
-
-    body {
-
-        background-color: rgb(253, 253, 255);
-
-    }
-
-    main {
-        grid-area: main;
-
-    }
-
-    .contenedorclient {
-
-        margin-top: 20px;
-        background-image: url(../img/clientes.jpg);
-        background-repeat: no-repeat;
-        opacity: 85%;
-        height: 620px;
-        display: flow-root;
-        border: none;
-
-
-    }
-
-    .tituloclient {
-
-        background-color: silver;
-        text-align: center;
-        margin-top: 8px;
-        font-style: oblique;
-        font-family: cursive
-    }
-
-
-    .items {
-
-        height: 80px;
-        text-align: center;
-
-
-    }
-
-
-    footer {
-        grid-area: footer;
-        background-color: rgba(104, 0, 0, 0.968);
-
-    }
-
-    .menufooter {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        font-size: 15px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    }
-
-
-
-
-
-    /*pagina contacto*/
-
-
-    .dude {
-
-
-        background-color: rgb(218, 218, 218);
-        background-repeat: repeat;
-        height: 1200px;
-
-
-    }
-
-    #flex2 {
-
-        height: auto;
-        display: flex;
-        margin-top: 10px;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        align-content: flex-start;
-
-
-    }
-
-    .preguntas {
-
-
-        text-align: center;
-        border-style: ridge;
-
-
-    }
-
-    #rigths {
-        color: aliceblue;
-        font-size: 9px;
-        padding-right: 80px;
-
-
-    }
-
-    .contact {
-
-        background-color: transparent;
-
-    }
-
-
-    footer {
-
-        background-color: rgba(104, 0, 0, 0.968);
-
-    }
-
-
-
-    /*marcas*/
-
-
-
-
-
-    a {
-        text-decoration: none;
-        color: rgb(57, 35, 181);
-    }
-
-
-
-    body {
-
-        background-color: rgb(255, 255, 255);
-
-    }
-
-    img {
-
-        max-width: 100vw;
-
-    }
-
-    h1 {
-        padding-top: 5px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-
-
-    .logo {
-
-        height: 100px;
-        width: 100px;
-
-    }
-
-    footer {
-        grid-area: footer;
-        background-color: rgba(104, 0, 0, 0.968);
-
-    }
-
-    .menufooter {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        font-size: 15px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    }
-
-    #rigths {
-        color: aliceblue;
-        font-size: 9px;
-        padding-left: 40px;
-
-
-    }
-
-    /*poductos*/
-
-    #grillaproductos {
-        display: grid;
-        height: 1150px;
-        width: auto;
-        grid-template-columns: 100%;
-        grid-template-areas: "header"
-            "h1"
-            "main"
-            "footer";
-        align-content: space-around;
-        justify-content: space-evenly;
-        background-color: rgb(255, 255, 255);
-
-    }
-
-
-    header {
-
-        grid-area: header;
-    }
-
-
-    .contenedorproductos:hover {
-        text-decoration: overline;
-        color: rgb(0, 0, 0);
-
-    }
-
-    .contenedorproductos {
-        text-decoration: overline;
-        color: rgb(255, 255, 255);
-
-    }
-
-    .contenedorlinks {
-
-        background-image: url(../img/istockphoto-519914916-1024x1024.jpg);
-        height: 600px;
-    }
-
-
-
-    body {
-
-        background-color: rgb(255, 255, 255);
-
-    }
-
-    img {
-
-        max-width: 100vw;
-
-    }
-
-
-
-
-    h1 {
-
-        grid-area: h1;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: rgb(4, 4, 3);
-        font-size: xx-large;
-        background-color: rgb(196, 196, 196);
-
-    }
-
-    .items {
-
-        font-size: larger;
-
-    }
-
-    footer {
-        grid-area: footer;
-        background-color: rgba(104, 0, 0, 0.968);
-        margin-top: 5px;
-    }
-
-    .menufooter {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        font-size: 15px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    }
-
-    #rigths {
-        color: aliceblue;
-        font-size: 9px;
-        padding-left: 40px;
-
-
-
-    }
-
-    /*animaciones*/
-
-
-    .navega:hover {
-
-        padding-left: 80px;
-        transition: calc(0.6s);
-
-
-    }
-
-    .menufooter:hover {
-
-        padding-right: 75px;
-        transition: calc(0.6s);
-
-
-
-
-    }
-
-    /* boostrap */
-
-    #carouselExampleControls {
-        width: 99vw;
-
-    }
-
-    .marcas {
-
-        width: 99vw;
-        height: 200px;
-
-    }
-
-}
-
-
+/*colores*/
+/*body*/
+/*footer*/
+@media only screen and (max-width: 600px) {
+  /*pagina clientes*/
+  #grillaclientes {
+    display: grid;
+    height: 1400px;
+    width: auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "main" "footer";
+    align-content: space-around;
+    justify-content: space-evenly;
+    background-color: white; }
+  header {
+    grid-area: header; }
+  a {
+    text-decoration: none;
+    color: #3923b5; }
+  body {
+    background-color: #f3f2f4; }
+  main {
+    grid-area: main; }
+  .contenedorclient {
+    margin-top: 20px;
+    background-image: url(../img/clientes.jpg);
+    background-repeat: no-repeat;
+    opacity: 85%;
+    height: 620px;
+    display: flow-root;
+    border: none; }
+  .tituloclient {
+    background-color: silver;
+    text-align: center;
+    margin-top: 8px;
+    font-style: oblique;
+    font-family: cursive; }
+  .items {
+    height: 80px;
+    text-align: center; }
+  footer {
+    grid-area: footer;
+    background-color: #820505; }
+  .menufooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 2%; } }
 
 /*dispositivos panalla full*/
-
-@media only screen and (min-width:600px) {
-
-
-
-    #grilla {
-        display: grid;
-        height: 1500px;
-        grid-template-columns: 100%;
-        grid-template-areas: "header"
-            "video"
-            "map"
-            "footer";
-        align-content: space-around;
-        justify-content: space-evenly;
-        background-color: rgb(255, 255, 255);
-
-    }
-
-
-    header {
-        grid-area: header;
-
-    }
-
-    .logotitulo {
-        width: 100vw;
-
-    }
-
-
-
-    a {
-        text-decoration: none;
-        color: rgb(57, 35, 181);
-    }
-
-
-
-    .video {
-        grid-area: video;
-        height: 450px;
-        width: 100%;
-        margin-top: 5px;
-    }
-
-
-    .map {
-
-
-        grid-area: map;
-        height: 200px;
-        width: 100%;
-        margin-top: 4px;
-
-    }
-
-
-
-
-    body {
-
-        background-color: rgb(253, 253, 255);
-
-    }
-
-
-
-
-    footer {
-        grid-area: footer;
-        background-color: rgba(104, 0, 0, 0.968);
-        margin-top: 5px;
-    }
-
-    .menufooter {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        font-size: 15px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    }
-
-    #rigths {
-        color: aliceblue;
-        font-size: 9px;
-        padding-left: 40px;
-
-
-
-    }
-
-
-    /*pagina nosotros*/
-
-    #grillanosotros {
-        display: grid;
-        height: 1500px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "header header"
-            "imagen1 imagen2"
-            "imagen3 historia"
-            "footer footer";
-
-        background-color: rgb(255, 255, 255);
-        gap: 20px;
-
-    }
-
-
-    header {
-
-        grid-area: header;
-
-    }
-
-
-
-
-
-    a {
-        text-decoration: none;
-        color: rgb(57, 35, 181);
-    }
-
-
-
-    body {
-
-        background-color: rgb(253, 253, 255);
-
-    }
-
-
-    .imagen1 {
-        grid-area: imagen1;
-        width: fit-content;
-        padding-left: 10px;
-    }
-
-    .imagen2 {
-        grid-area: imagen2;
-        width: fit-content;
-    }
-
-
-    .imagen3 {
-        grid-area: imagen3;
-        padding-left: 10px;
-    }
-
-
-
-    .historia {
-        grid-area: historia;
-        background-color: rgb(227, 227, 227);
-        width: 650px;
-        height: 365px;
-    }
-
-    .fotos {
-        width: 650px;
-    }
-
-    h1 {
-
-        text-align: center;
-
-
-    }
-
-    #nosparrafo {
-
-        font-size: larger;
-        font-family: serif;
-        text-align: center;
-
-    }
-
-
-    footer {
-        grid-area: footer;
-        background-color: rgba(104, 0, 0, 0.968);
-
-    }
-
-    .menufooter {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        font-size: 15px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    }
-
-    #rigths {
-        color: aliceblue;
-        font-size: 9px;
-        padding-left: 40px;
-
-
-
-    }
-
-
-    /*pagina clientes*/
-
-
-    /*pagina clientes*/
-
-
-    #grillaclientes {
-        display: grid;
-        height: 1400px;
-        grid-template-columns: 100%;
-        grid-template-areas: "header"
-            "main"
-            "footer";
-        align-content: space-around;
-        justify-content: space-evenly;
-        background-color: rgb(255, 255, 255);
-
-    }
-
-    .tituloclient {
-
-        background-color: silver;
-        text-align: center;
-        margin-top: 10px;
-        font-style: oblique;
-        font-family: cursive
-    }
-
-    .contenedorclient {
-
-        margin-top: 15px;
-        background-image: url(../img/clientes.jpg);
-        background-repeat: repeat;
-        background-size: 100vw;
-        opacity: 85%;
-        height: 680px;
-        display: flow-root;
-        border: none;
-
-
-    }
-
-    .titulo {
-        margin-top: 200px;
-        width: 100vw;
-    }
-
-    .items {
-
-        height: 80px;
-        text-align: center;
-
-
-    }
-
-
-
-
-    /*pagina contacto*/
-
-
-    .titulologo {
-        width: 100vw;
-
-    }
-
-    .dude {
-
-
-        background-color: rgb(218, 218, 218);
-        height: 800px;
-
-
-    }
-
-    #flex2 {
-
-        height: auto;
-        display: flex;
-        margin-top: 10px;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        align-content: flex-start;
-
-
-    }
-
-    .preguntas {
-
-
-        text-align: center;
-        border-style: ridge;
-
-
-    }
-
-
-    /*pagina marcas*/
-
-    #grillamarcas {
-        display: grid;
-        height: 1300px;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-areas:
-            "header header header header"
-            "h1 h1 h1 h1"
-            "imagen1 imagen2 imagen3 imagen4"
-            "imagen5 imagen6 imagen7 imagen8"
-            "imagen9 imagen10 imagen11 imagen12"
-            "footer footer footer footer";
-        align-content: space-around;
-        justify-content: space-evenly;
-        background-color: rgb(255, 255, 255);
-
-    }
-
-
-    header {
-
-        grid-area: header;
-    }
-
-    .titulologo {
-        width: 100vw;
-
-    }
-
-
-    a {
-        text-decoration: none;
-        color: rgb(57, 35, 181);
-    }
-
-
-
-    body {
-
-        background-color: rgb(255, 255, 255);
-
-    }
-
-
-    h1 {
-        grid-area: h1;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        width: 99vw;
-    }
-
-
-    .logo {
-
-        height: 100px;
-        width: 100px;
-
-    }
-
-    footer {
-        grid-area: footer;
-        background-color: rgba(104, 0, 0, 0.968);
-        height: 220px;
-
-    }
-
-    .menufooter {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        font-size: 15px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    }
-
-    #rigths {
-        color: aliceblue;
-        font-size: 9px;
-        padding-left: 40px;
-
-
-    }
-
-
-    /*poductos*/
-
-    #grillaproductos {
-        display: grid;
-        height: 1400px;
-        width: auto;
-        grid-template-columns: 100%;
-        grid-template-areas: "header"
-            "h1"
-            "main"
-            "footer";
-        align-content: space-around;
-        justify-content: space-evenly;
-        background-color: rgb(255, 255, 255);
-
-    }
-
-
-    header {
-
-        grid-area: header;
-    }
-
-
-    .contenedorproductos {
-
-        text-decoration: overline;
-        color: rgb(0, 0, 0);
-        font-weight: bolder;
-
-
-    }
-
-    .contenedorproductos:hover {
-
-        text-decoration: overline;
-        color: rgb(255, 255, 255);
-        font-weight: bolder;
-
-
-
-
-
-
-    }
-
-    .contenedorlinks {
-
-        background-image: url(../img/istockphoto-519914916-1024x1024.jpg);
-        height: 600px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-
-
-
-    body {
-
-        background-color: rgb(255, 255, 255);
-
-    }
-
-    img {
-
-        max-width: 100vw;
-
-    }
-
-
-
-
-    h1 {
-
-        grid-area: h1;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: rgb(4, 4, 3);
-        font-size: xx-large;
-        background-color: rgb(196, 196, 196);
-
-    }
-
-    .items {
-
-        font-size: larger;
-
-    }
-
-    footer {
-        grid-area: footer;
-        background-color: rgba(104, 0, 0, 0.968);
-        margin-top: 5px;
-    }
-
-
-    .menufooter {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        font-size: 15px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    }
-
-    #rigths {
-        color: aliceblue;
-        font-size: 9px;
-        padding-left: 40px;
-
-
-
-    }
-
-
-    /*animaciones*/
-
-
-    .navega:hover {
-
-        padding-bottom: 50px;
-        transition: calc(0.6s);
-
-
-    }
-
-    .menufooter:hover {
-
-        padding-right: 75px;
-        transition: calc(0.6s);
-
-
-
-
-    }
-
-    .imagen1:hover {
-
-        transform: scale(2, 1.5);
-
-    }
-
-    .imagen2:hover {
-
-        transform: scale(1.5);
-
-    }
-
-    .imagen3:hover {
-
-        transform: scale(1.5);
-
-    }
-
-    .imagen4:hover {
-
-        transform: scale(1.5);
-
-    }
-
-    .imagen5:hover {
-
-        transform: scale;
-
-    }
-
-    .imagen6:hover {
-
-        transform: scale(1.5);
-
-    }
-
-    .imagen7:hover {
-
-        transform: scale(1.5);
-
-    }
-
-    .imagen8:hover {
-
-        transform: scale(1.5);
-
-    }
-
-    .imagen1:hover {
-
-        transform: scale(1.5);
-
-    }
-
-    .imagen11:hover {
-
-        transform: scale(1.5);
-
-    }
-
-    .imagen10:hover {
-
-        transform: scale(1.5);
-
-    }
-
-
-
-    .imagen12:hover {
-
-        transform: scale(2, 1.5);
-
-    }
-
-
-    /* boostrap */
-
-    #carouselExampleControls {
-        width: 99vw;
-
-    }
-
-    .marcas {
-
-        width: 99vw;
-        height: 550px;
-
-    }
-
-
-}
-
+@media only screen and (min-width: 600px) {
+  /*pagina clientes*/
+  #grillaclientes {
+    display: grid;
+    height: 1400px;
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "main" "footer";
+    align-content: space-around;
+    justify-content: space-evenly;
+    background-color: white; }
+  .tituloclient {
+    background-color: silver;
+    text-align: center;
+    margin-top: 10px;
+    font-style: oblique;
+    font-family: cursive; }
+  .contenedorclient {
+    margin-top: 15px;
+    background-image: url(../img/clientes.jpg);
+    background-repeat: repeat;
+    background-size: 100vw;
+    opacity: 85%;
+    height: 680px;
+    display: flow-root;
+    border: none; }
+  .titulo {
+    margin-top: 200px;
+    width: 100vw; }
+  .items {
+    height: 80px;
+    text-align: center; } }
+
+/* Xs SM*/
+@media only screen and (max-width: 600px) {
+  /*pagina contacto*/
+  .dude {
+    background-color: #dadada;
+    background-repeat: repeat;
+    height: 1200px; }
+  #flex2 {
+    height: auto;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-start; }
+  .preguntas {
+    text-align: center;
+    border-style: ridge; }
+  #rigths {
+    color: aliceblue;
+    font-size: 9px;
+    padding-right: 80px; }
+  .contact {
+    background-color: transparent; }
+  footer {
+    background-color: #680000f7; } }
+
+/*dispositivos panalla full*/
+@media only screen and (min-width: 600px) {
+  /*pagina contacto*/
+  .titulologo {
+    width: 100vw; }
+  .dude {
+    background-color: #dadada;
+    height: 800px; }
+  #flex2 {
+    height: auto;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-start; }
+  .preguntas {
+    text-align: center;
+    border-style: ridge; }
+  /*pagina marcas*/
+  #grillamarcas {
+    display: grid;
+    height: 1300px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: "header header header header" "h1 h1 h1 h1" "imagen1 imagen2 imagen3 imagen4" "imagen5 imagen6 imagen7 imagen8" "imagen9 imagen10 imagen11 imagen12" "footer footer footer footer";
+    align-content: space-around;
+    justify-content: space-evenly;
+    background-color: white; }
+  header {
+    grid-area: header; }
+  .titulologo {
+    width: 100vw; }
+  a {
+    text-decoration: none;
+    color: #3923b5; }
+  body {
+    background-color: white; }
+  h1 {
+    grid-area: h1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 99vw; }
+  .logo {
+    height: 100px;
+    width: 100px; }
+  footer {
+    grid-area: footer;
+    background-color: #820505;
+    height: 220px; }
+  .menufooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 2%; }
+  #rigths {
+    color: aliceblue;
+    font-size: 9px;
+    padding-left: 40px; } }
+
+/*colores*/
+/*body*/
+/*footer*/
+/* Xs SM*/
+@media only screen and (max-width: 600px) {
+  /*index*/
+  #grilla {
+    display: grid;
+    height: 1400px;
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "video" "map" "footer";
+    align-content: space-around;
+    justify-content: space-evenly;
+    background-color: white; }
+  header {
+    grid-area: header; }
+  a {
+    text-decoration: none;
+    color: #3923b5; }
+  .video {
+    grid-area: video;
+    height: 500px;
+    width: 100%; }
+  .map {
+    grid-area: map;
+    height: 200px;
+    width: 100%; }
+  body {
+    background-color: #f3f2f4; }
+  img {
+    max-width: 100vw; }
+  footer {
+    grid-area: footer;
+    background-color: #820505; }
+  .menufooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 2%; }
+  #rigths {
+    color: aliceblue;
+    font-size: 9px;
+    padding-left: 40px; } }
+
+@media only screen and (min-width: 600px) {
+  #grilla {
+    display: grid;
+    height: 1300px;
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "video" "map" "footer";
+    align-content: space-around;
+    justify-content: space-evenly;
+    background-color: white; }
+  header {
+    grid-area: header; }
+  .logotitulo {
+    width: 100vw; }
+  a {
+    text-decoration: none;
+    color: #3923b5; }
+  .video {
+    grid-area: video;
+    height: 450px;
+    width: 100%;
+    margin-top: 5px; }
+  .map {
+    grid-area: map;
+    height: 200px;
+    width: 100%;
+    margin-top: 4px; }
+  body {
+    background-color: #f3f2f4; }
+  footer {
+    grid-area: footer;
+    background-color: #820505;
+    margin-top: 5px; }
+  .menufooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 2%; }
+  #rigths {
+    color: aliceblue;
+    font-size: 9px;
+    padding-left: 40px; } }
+
+/* Xs SM*/
+@media only screen and (max-width: 600px) {
+  /*marcas*/
+  a {
+    text-decoration: none;
+    color: #3923b5; }
+  body {
+    background-color: white; }
+  img {
+    max-width: 100vw; }
+  h1 {
+    padding-top: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  .logo {
+    height: 100px;
+    width: 100px; }
+  footer {
+    grid-area: footer;
+    background-color: #820505; }
+  .menufooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 2%; }
+  #rigths {
+    color: aliceblue;
+    font-size: 9px;
+    padding-left: 40px; } }
+
+@media only screen and (max-width: 600px) {
+  /*pagina nosotros*/
+  #grillanosotros {
+    display: grid;
+    height: 1400px;
+    width: auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "imagen1 " "imagen2" "imagen3" "historia" "footer";
+    background-color: white; }
+  header {
+    grid-area: header; }
+  a {
+    text-decoration: none;
+    color: #3923b5; }
+  body {
+    background-color: #f3f2f4; }
+  .imagen1 {
+    grid-area: imagen1;
+    padding-top: 10px; }
+  .imagen2 {
+    grid-area: imagen2;
+    padding-top: 5px; }
+  .imagen3 {
+    grid-area: imagen3;
+    padding-top: 5px; }
+  .historia {
+    grid-area: historia;
+    background-color: azure;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px; }
+  h1 {
+    text-align: center; }
+  footer {
+    grid-area: footer;
+    background-color: #820505; }
+  .menufooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 2%; }
+  #rigths {
+    color: aliceblue;
+    font-size: 9px;
+    padding-left: 40px; } }
+
+/*dispositivos panalla full*/
+@media only screen and (min-width: 600px) {
+  /*pagina nosotros*/
+  #grillanosotros {
+    display: grid;
+    height: 1500px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header" "imagen1 imagen2" "imagen3 historia" "footer footer";
+    background-color: white;
+    gap: 20px; }
+  header {
+    grid-area: header; }
+  a {
+    text-decoration: none;
+    color: #3923b5; }
+  body {
+    background-color: #f3f2f4; }
+  .imagen1 {
+    grid-area: imagen1;
+    width: fit-content;
+    padding-left: 10px; }
+  .imagen2 {
+    grid-area: imagen2;
+    width: fit-content; }
+  .imagen3 {
+    grid-area: imagen3;
+    padding-left: 10px; }
+  .historia {
+    grid-area: historia;
+    background-color: #e3e3e3;
+    width: 650px;
+    height: 365px; }
+  .fotos {
+    width: 650px; }
+  h1 {
+    text-align: center; }
+  #nosparrafo {
+    font-size: larger;
+    font-family: serif;
+    text-align: center; }
+  footer {
+    grid-area: footer;
+    background-color: #820505; }
+  .menufooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 2%; }
+  #rigths {
+    color: aliceblue;
+    font-size: 9px;
+    padding-left: 40px; }
+  /*pagina clientes*/
+  /*pagina clientes*/
+  #grillaclientes {
+    display: grid;
+    height: 1400px;
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "main" "footer";
+    align-content: space-around;
+    justify-content: space-evenly;
+    background-color: white; }
+  .tituloclient {
+    background-color: silver;
+    text-align: center;
+    margin-top: 10px;
+    font-style: oblique;
+    font-family: cursive; }
+  .contenedorclient {
+    margin-top: 15px;
+    background-image: url(../img/clientes.jpg);
+    background-repeat: repeat;
+    background-size: 100vw;
+    opacity: 85%;
+    height: 680px;
+    display: flow-root;
+    border: none; }
+  .titulo {
+    margin-top: 200px;
+    width: 100vw; }
+  .items {
+    height: 80px;
+    text-align: center; } }
+
+/* Xs SM*/
+@media only screen and (max-width: 600px) {
+  /*poductos*/
+  #grillaproductos {
+    display: grid;
+    height: 1150px;
+    width: auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "h1" "main" "footer";
+    align-content: space-around;
+    justify-content: space-evenly;
+    background-color: white; }
+  header {
+    grid-area: header; }
+  .contenedorproductos:hover {
+    text-decoration: overline;
+    color: black; }
+  .contenedorproductos {
+    text-decoration: overline;
+    color: white; }
+  .contenedorlinks {
+    background-image: url(../img/istockphoto-519914916-1024x1024.jpg);
+    height: 600px; }
+  body {
+    background-color: white; }
+  img {
+    max-width: 100vw; }
+  h1 {
+    grid-area: h1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #040403;
+    font-size: xx-large;
+    background-color: #c4c4c4; }
+  .items {
+    font-size: larger; }
+  footer {
+    grid-area: footer;
+    background-color: #820505;
+    margin-top: 5px; }
+  .menufooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 2%; }
+  #rigths {
+    color: aliceblue;
+    font-size: 9px;
+    padding-left: 40px; } }
+
+/*dispositivos panalla full*/
+@media only screen and (min-width: 600px) {
+  /*poductos*/
+  #grillaproductos {
+    display: grid;
+    height: 1400px;
+    width: auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "header" "h1" "main" "footer";
+    align-content: space-around;
+    justify-content: space-evenly;
+    background-color: white; }
+  header {
+    grid-area: header; }
+  .contenedorproductos {
+    text-decoration: overline;
+    color: black;
+    font-weight: bolder; }
+  .contenedorproductos:hover {
+    text-decoration: overline;
+    color: white;
+    font-weight: bolder; }
+  .contenedorlinks {
+    background-image: url(../img/istockphoto-519914916-1024x1024.jpg);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  body {
+    background-color: white; }
+  img {
+    max-width: 100vw; }
+  h1 {
+    grid-area: h1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #040403;
+    font-size: xx-large;
+    background-color: #c4c4c4; }
+  .items {
+    font-size: larger; }
+  footer {
+    grid-area: footer;
+    background-color: #820505;
+    margin-top: 5px; }
+  .menufooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 2%; }
+  #rigths {
+    color: aliceblue;
+    font-size: 9px;
+    padding-left: 40px; } }
+
+* {
+  margin: 0%;
+  padding: 0%; }
+
+button {
+  background-color: #9f0404; }
+
+@media only screen and (min-width: 400px) {
+  .navbar {
+    background-color: #9f0404; }
+  .navbar .navbar-brand {
+    color: #000000; }
+  .navbar .navbar-brand:hover,
+  .navbar .navbar-brand:focus {
+    color: #00cccc; }
+  .navbar .navbar-text {
+    color: #000000; }
+  .navbar .navbar-text a {
+    color: #00cccc; }
+  .navbar .navbar-text a:hover,
+  .navbar .navbar-text a:focus {
+    color: #00cccc; }
+  .navbar .navbar-nav .nav-link {
+    color: #000000;
+    border-radius: .25rem;
+    margin: 0 0.25em; }
+  .navbar .navbar-nav .nav-link:not(.disabled):hover,
+  .navbar .navbar-nav .nav-link:not(.disabled):focus {
+    color: #00cccc; }
+  .navbar .navbar-nav .nav-item.active .nav-link,
+  .navbar .navbar-nav .nav-item.active .nav-link:hover,
+  .navbar .navbar-nav .nav-item.active .nav-link:focus,
+  .navbar .navbar-nav .nav-item.show .nav-link,
+  .navbar .navbar-nav .nav-item.show .nav-link:hover,
+  .navbar .navbar-nav .nav-item.show .nav-link:focus {
+    color: #00cccc;
+    background-color: #f3f2f4; }
+  .navbar .navbar-toggler {
+    border-color: #f3f2f4; }
+  .navbar .navbar-toggler:hover,
+  .navbar .navbar-toggler:focus {
+    background-color: #f3f2f4; }
+  .navbar .navbar-toggler .navbar-toggler-icon {
+    color: #000000; }
+  .navbar .navbar-collapse,
+  .navbar .navbar-form {
+    border-color: #000000; }
+  .navbar .navbar-link {
+    color: #000000; }
+  .navbar .navbar-link:hover {
+    color: #00cccc; } }
+
+@media only screen and (max-width: 600px) {
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #000000; }
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #00cccc; }
+  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #00cccc;
+    background-color: #f3f2f4; } }
+
+@media only screen and (min-width: 600px) {
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #000000; }
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #00cccc; }
+  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #00cccc;
+    background-color: #f3f2f4; } }
+
+/*animaciones*/
+.navega:hover {
+  padding-bottom: 50px;
+  transition: calc(0.6s); }
+
+.menufooter:hover {
+  padding-right: 75px;
+  transition: calc(0.6s); }
+
+.imagen1:hover {
+  transform: scale(2, 1.5); }
+
+.imagen2:hover {
+  transform: scale(1.5); }
+
+.imagen3:hover {
+  transform: scale(1.5); }
+
+.imagen4:hover {
+  transform: scale(1.5); }
+
+.imagen5:hover {
+  transform: scale; }
+
+.imagen6:hover {
+  transform: scale(1.5); }
+
+.imagen7:hover {
+  transform: scale(1.5); }
+
+.imagen8:hover {
+  transform: scale(1.5); }
+
+.imagen1:hover {
+  transform: scale(1.5); }
+
+.imagen11:hover {
+  transform: scale(1.5); }
+
+.imagen10:hover {
+  transform: scale(1.5); }
+
+.imagen12:hover {
+  transform: scale(2, 1.5); }
+
+/* boostrap */
+#carouselExampleControls {
+  width: 99vw; }
+
+.marcas {
+  width: 99vw;
+  height: 550px; }

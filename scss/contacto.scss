@@ -1,0 +1,190 @@
+
+/* Xs SM*/
+
+@media only screen and (max-width:600px) {
+
+
+    /*pagina contacto*/
+
+
+    .dude {
+
+
+        background-color: rgb(218, 218, 218);
+        background-repeat: repeat;
+        height: 1200px;
+
+
+    }
+
+    #flex2 {
+
+        height: auto;
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-content: flex-start;
+
+
+    }
+
+    .preguntas {
+
+
+        text-align: center;
+        border-style: ridge;
+
+
+    }
+
+    #rigths {
+        color: aliceblue;
+        font-size: 9px;
+        padding-right: 80px;
+
+
+    }
+
+    .contact {
+
+        background-color: transparent;
+
+    }
+
+
+    footer {
+
+        background-color: #680000f7;
+
+    }
+}
+
+/*dispositivos panalla full*/
+
+@media only screen and (min-width:600px) {
+
+
+    /*pagina contacto*/
+
+
+    .titulologo {
+        width: 100vw;
+
+    }
+
+    .dude {
+
+
+        background-color: rgb(218, 218, 218);
+        height: 800px;
+
+
+    }
+
+    #flex2 {
+
+        height: auto;
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-content: flex-start;
+
+
+    }
+
+    .preguntas {
+
+
+        text-align: center;
+        border-style: ridge;
+
+
+    }
+
+
+    /*pagina marcas*/
+
+    #grillamarcas {
+        display: grid;
+        height: 1300px;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas:
+            "header header header header"
+            "h1 h1 h1 h1"
+            "imagen1 imagen2 imagen3 imagen4"
+            "imagen5 imagen6 imagen7 imagen8"
+            "imagen9 imagen10 imagen11 imagen12"
+            "footer footer footer footer";
+        align-content: space-around;
+        justify-content: space-evenly;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+
+    header {
+
+        grid-area: header;
+    }
+
+    .titulologo {
+        width: 100vw;
+
+    }
+
+
+    a {
+        text-decoration: none;
+        color: rgb(57, 35, 181);
+    }
+
+
+
+    body {
+
+        background-color: rgb(255, 255, 255);
+
+    }
+
+
+    h1 {
+        grid-area: h1;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 99vw;
+    }
+
+
+    .logo {
+
+        height: 100px;
+        width: 100px;
+
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: $secondcolor;
+        height: 220px;
+
+    }
+
+    .menufooter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 15px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-right: 2%;
+
+    }
+
+    #rigths {
+        color: aliceblue;
+        font-size: 9px;
+        padding-left: 40px;
+
+
+    }
+}
