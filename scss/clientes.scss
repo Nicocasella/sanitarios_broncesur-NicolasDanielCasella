@@ -56,6 +56,7 @@
            height: 620px;
            display: flow-root;
            border: none;
+           list-style: none;
    
    
        }
@@ -139,13 +140,14 @@
         height: 680px;
         display: flow-root;
         border: none;
+        list-style: none;
 
 
     }
 
     .titulo {
-        margin-top: 200px;
         width: 100vw;
+        color: $colortitulo;
     }
 
     .items {

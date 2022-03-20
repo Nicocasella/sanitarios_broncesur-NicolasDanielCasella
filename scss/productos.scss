@@ -8,7 +8,7 @@
 
     #grillaproductos {
         display: grid;
-        height: 1150px;
+        height: 1250px;
         width: auto;
         grid-template-columns: 100%;
         grid-template-areas: "header"
@@ -36,7 +36,7 @@
 
     .contenedorproductos {
         text-decoration: overline;
-        color: rgb(255, 255, 255);
+        color: rgb(1, 19, 106);
 
     }
 
@@ -44,6 +44,7 @@
 
         background-image: url(../img/istockphoto-519914916-1024x1024.jpg);
         height: 600px;
+        list-style: none;
     }
 
 
@@ -149,7 +150,7 @@
     .contenedorproductos:hover {
 
         text-decoration: overline;
-        color: rgb(255, 255, 255);
+        color: rgba(19, 5, 143, 0.55);
         font-weight: bolder;
 
 
@@ -193,6 +194,7 @@
         color: rgb(4, 4, 3);
         font-size: xx-large;
         background-color: rgb(196, 196, 196);
+        color: $colortitulo;
 
     }
 
