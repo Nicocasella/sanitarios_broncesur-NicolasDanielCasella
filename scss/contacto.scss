@@ -1,0 +1,112 @@
+
+/* Xs SM*/
+
+@media only screen and (max-width:600px) {
+
+
+    /*pagina contacto*/
+
+
+    .dude {
+
+
+        background-color: rgb(218, 218, 218);
+        background-repeat: repeat;
+        height: 1300px;
+
+
+    }
+
+    #flex2 {
+
+        height: auto;
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-content: flex-start;
+
+
+    }
+    .botoncontacto{
+        background-color: rgb(169, 169, 169);
+        margin-left: 10px;
+    
+    
+        }
+
+    #rigths {
+        color: aliceblue;
+        font-size: 9px;
+        padding-right: 80px;
+
+
+    }
+
+    .contact {
+
+        background-color: transparent;
+
+    }
+
+
+    footer {
+
+        background-color: #680000f7;
+
+    }
+}
+
+
+/*dispositivos panalla full*/
+
+@media only screen and (min-width:600px) {
+
+
+    /*pagina contacto*/
+
+
+    .titulologo {
+        width: 100vw;
+
+    }
+
+    .dude {
+
+
+        background-color: rgb(218, 218, 218);
+        height: 800px;
+
+
+    }
+
+    #flex2 {
+
+        height: auto;
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-content: flex-start;
+
+
+    }
+
+    .preguntas {
+
+
+        text-align: center;
+        border-style: ridge;
+
+
+    }
+
+    .botoncontacto{
+    background-color: rgb(169, 169, 169);
+    margin-left: 10px;
+
+
+    }
+}
+
+    

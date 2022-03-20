@@ -1,0 +1,251 @@
+@import "./clientes.scss";
+@import "./contacto.scss";
+@import "./colores.scss";
+@import "./home.scss";
+@import "./marcas.scss";
+@import "./nosotros.scss";
+@import "./productos.scss";
+
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+
+
+.primary {
+    background-color: #9f0404;
+
+
+
+}
+@media only screen and (min-width:400px) {
+
+.navbar {
+    background-color: #9f0404;
+}
+
+.navbar .navbar-brand {
+    color: #000000;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: #00cccc;
+}
+
+.navbar .navbar-text {
+    color: #000000;
+}
+
+.navbar .navbar-text a {
+    color: #00cccc;
+}
+
+.navbar .navbar-text a:hover,
+.navbar .navbar-text a:focus {
+    color: #00cccc;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #000000;
+    border-radius: .25rem;
+    margin: 0 0.25em;
+}
+
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+    color: #00cccc;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+    color: #00cccc;
+    background-color: #f3f2f4;
+}
+
+.navbar .navbar-toggler {
+    border-color: #f3f2f4;
+}
+
+.navbar .navbar-toggler:hover,
+.navbar .navbar-toggler:focus {
+    background-color: #f3f2f4;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+    color: #000000;
+}
+
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+    border-color: #000000;
+}
+
+.navbar .navbar-link {
+    color: #000000;
+}
+
+.navbar .navbar-link:hover {
+    color: #00cccc;
+}
+
+}
+
+@media only screen and (max-width:600px) {
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: #000000;
+    }
+
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: #00cccc;
+    }
+
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: #00cccc;
+        background-color: #f3f2f4;
+    }
+
+}
+
+
+@media only screen and (min-width:600px) {
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: #000000;
+    }
+
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: #00cccc;
+    }
+
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: #00cccc;
+        background-color: #f3f2f4;
+    }
+
+}
+
+
+
+    /*animaciones*/
+
+
+    .navega:hover {
+
+        padding-bottom: 50px;
+        transition: calc(0.6s);
+
+
+    }
+
+    .menufooter:hover {
+
+        padding-right: 75px;
+        transition: calc(0.6s);
+
+
+
+
+    }
+
+    .imagen1:hover {
+
+        transform: scale(2, 1.5);
+
+    }
+
+    .imagen2:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen3:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen4:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen5:hover {
+
+        transform: scale;
+
+    }
+
+    .imagen6:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen7:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen8:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen1:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen11:hover {
+
+        transform: scale(1.5);
+
+    }
+
+    .imagen10:hover {
+
+        transform: scale(1.5);
+
+    }
+
+
+
+    .imagen12:hover {
+
+        transform: scale(2, 1.5);
+
+    }
+
+
+    /* boostrap */
+
+    #carouselExampleControls {
+        width: 99vw;
+
+    }
+
+    .marcas {
+
+        width: 99vw;
+        height: 550px;
+
+    }
+
+
+

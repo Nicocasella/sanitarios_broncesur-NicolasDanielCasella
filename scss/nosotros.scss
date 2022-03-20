@@ -1,0 +1,222 @@
+@media only screen and (max-width:600px) {
+
+
+    /*pagina nosotros*/
+
+    #grillanosotros {
+        display: grid;
+        height: 1400px;
+        width: auto;
+        grid-template-columns: 100%;
+        grid-template-areas: "header"
+            "imagen1 "
+            "imagen2"
+            "imagen3"
+            "historia"
+            "footer";
+        background-color: rgb(255, 255, 255);
+
+    }
+
+
+
+    header {
+        grid-area: header;
+    }
+
+
+
+    a {
+        text-decoration: none;
+        color: rgb(57, 35, 181);
+    }
+
+
+
+    body {
+
+        background-color: $maincolor;
+
+    }
+
+
+    .imagen1 {
+        grid-area: imagen1;
+        padding-top: 10px;
+    }
+
+    .imagen2 {
+        grid-area: imagen2;
+        padding-top: 5px;
+
+    }
+
+
+    .imagen3 {
+        grid-area: imagen3;
+        padding-top: 5px;
+
+
+    }
+
+    .historia {
+        grid-area: historia;
+        background-color: azure;
+        text-align: justify;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    h1 {
+
+        text-align: center;
+
+    }
+
+
+    footer {
+        grid-area: footer;
+        background-color: $secondcolor;
+
+    }
+
+    .menufooter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 15px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-right: 2%;
+
+    }
+
+    #rigths {
+        color: aliceblue;
+        font-size: 9px;
+        padding-left: 40px;
+
+
+    }
+
+}
+
+/*dispositivos panalla full*/
+
+@media only screen and (min-width:600px) {
+
+
+    /*pagina nosotros*/
+
+    #grillanosotros {
+        display: grid;
+        height: 1500px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "header header"
+            "imagen1 imagen2"
+            "imagen3 historia"
+            "footer footer";
+
+        background-color: rgb(255, 255, 255);
+        gap: 20px;
+
+    }
+
+
+    header {
+
+        grid-area: header;
+
+    }
+
+
+
+
+
+    a {
+        text-decoration: none;
+        color: rgb(57, 35, 181);
+    }
+
+
+
+    body {
+
+        background-color: $maincolor;
+
+    }
+
+
+    .imagen1 {
+        grid-area: imagen1;
+        width: fit-content;
+        padding-left: 10px;
+    }
+
+    .imagen2 {
+        grid-area: imagen2;
+        width: fit-content;
+    }
+
+
+    .imagen3 {
+        grid-area: imagen3;
+        padding-left: 10px;
+    }
+
+
+
+    .historia {
+        grid-area: historia;
+        background-color: rgb(227, 227, 227);
+        width: 650px;
+        height: 365px;
+    }
+
+    .fotos {
+        width: 650px;
+    }
+
+    h1 {
+
+        text-align: center;
+        color: $colortitulo;
+
+    }
+
+    #nosparrafo {
+
+        font-size: larger;
+        font-family: serif;
+        text-align: center;
+
+    }
+
+
+    footer {
+        grid-area: footer;
+        background-color: $secondcolor;
+
+    }
+
+    .menufooter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 15px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-right: 2%;
+
+
+    }
+
+    #rigths {
+        color: aliceblue;
+        font-size: 9px;
+        padding-left: 40px;
+
+
+
+    }
+
+}
