@@ -30,22 +30,20 @@ h1 {
   font-weight: 100; }
 
 .preguntas1 {
-  color: #150000; }
+  color: #08011c; }
 
 .preguntas2 {
   font-size: 20px;
   font-weight: 500;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-stretch: expanded;
-  color: black; }
+  color: #391111;
+  text-align: center;
+  border-style: ridge;
+  background-color: #c2c2c2; }
 
 .preguntas3 {
-  color: #011a00; }
-
-.preguntas2:active {
-  background-color: #9b9b9b;
-  color: #000000;
-  font-size: 30px; }
+  color: #051f05; }
 
 @media only screen and (max-width: 600px) {
   /*pagina clientes*/
@@ -136,7 +134,7 @@ h1 {
   .dude {
     background-color: #dadada;
     background-repeat: repeat;
-    height: 1300px; }
+    height: 1350px; }
   #flex2 {
     height: auto;
     display: flex;
@@ -162,16 +160,16 @@ h1 {
   .titulologo {
     width: 100vw; }
   .dude {
-    background-color: #dadada;
-    height: 800px; }
+    background-color: #dadada; }
   #flex2 {
     height: auto;
     display: flex;
     margin-top: 10px;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-content: flex-start; }
-  .preguntas, .preguntas1, .preguntas3 {
+    align-content: flex-start;
+    margin-left: 2%; }
+  .preguntas .preguntas1 .preguntas2 .preguntas3, .preguntas1 .preguntas1 .preguntas2 .preguntas3, .preguntas3 .preguntas1 .preguntas2 .preguntas3 {
     text-align: center;
     border-style: ridge; }
   .botoncontacto {
@@ -210,22 +208,20 @@ h1 {
   font-weight: 100; }
 
 .preguntas1 {
-  color: #150000; }
+  color: #08011c; }
 
 .preguntas2 {
   font-size: 20px;
   font-weight: 500;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-stretch: expanded;
-  color: black; }
+  color: #391111;
+  text-align: center;
+  border-style: ridge;
+  background-color: #c2c2c2; }
 
 .preguntas3 {
-  color: #011a00; }
-
-.preguntas2:active {
-  background-color: #9b9b9b;
-  color: #000000;
-  font-size: 30px; }
+  color: #051f05; }
 
 /* Xs SM*/
 @media only screen and (max-width: 600px) {
@@ -311,7 +307,10 @@ h1 {
   #rigths {
     color: aliceblue;
     font-size: 9px;
-    padding-left: 40px; } }
+    padding-left: 40px; }
+  p {
+    margin-right: 3%;
+    margin-right: 3%; } }
 
 /* Xs SM*/
 @media only screen and (max-width: 600px) {
@@ -534,7 +533,8 @@ h1 {
     font-size: xx-large;
     background-color: #c4c4c4; }
   .items {
-    font-size: larger; }
+    font-size: larger;
+    list-style: none; }
   footer {
     grid-area: footer;
     background-color: #820505;

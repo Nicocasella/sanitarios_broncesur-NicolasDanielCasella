@@ -74,7 +74,7 @@ font-size: 30px;
 .preguntas1{
 
 @extend .preguntas;
-color: #150000;
+color: #08011c;
 
 
 }
@@ -92,15 +92,17 @@ color: #150000;
 
 .preguntas2{
 
-   @include estiloimpotante(rgb(0, 0, 0), 20px , 500);
-    
+   @include estiloimpotante(rgb(57, 17, 17), 20px , 500);
+   text-align: center;
+   border-style: ridge; 
+   background-color: rgb(194, 194, 194);
     
     }
 
  .preguntas3{
 
         @extend .preguntas;
-        color: #011a00;
+        color: #051f05;
         
         
         }
