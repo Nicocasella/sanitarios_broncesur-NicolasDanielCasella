@@ -45,7 +45,7 @@ h1 {
 .preguntas3 {
   color: #051f05; }
 
-@media only screen and (min-width: 400px) and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   /*pagina clientes*/
   .direccion {
     padding-left: 10px; }
@@ -315,7 +315,7 @@ h1 {
     width: 100vw;
     padding-top: 10px;
     padding-left: 10px;
-    padding-right: 30px; }
+    padding-right: 10px; }
   .card {
     grid-area: card;
     width: 100%;
@@ -396,7 +396,7 @@ h1 {
     padding-left: 15px; } }
 
 /* Xs SM*/
-@media only screen and (min-width: 400px) and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   /*marcas*/
   a {
     text-decoration: none;
@@ -431,7 +431,7 @@ h1 {
   /*carrusel*/
   #carouselExampleControls {
     padding-left: 10px;
-    padding-right: 20px; }
+    padding-right: 10px; }
   /*parrafo marca*/
   .marca {
     background-color: #eaeaea;
@@ -498,7 +498,7 @@ h1 {
     text-align: center;
     padding-right: 20px; } }
 
-@media only screen and (min-width: 400px) and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   /*pagina nosotros*/
   .direccion {
     padding-left: 10px; }
