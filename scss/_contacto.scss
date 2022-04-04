@@ -1,117 +1,142 @@
-
 /* Xs SM*/
 
-@media only screen and (max-width:600px) {
-
-
+@media only screen and (max-width: 600px) {
     /*pagina contacto*/
 
-
-    .dude {
-
-
-        background-color: rgb(218, 218, 218);
-        background-repeat: repeat;
-        height: 1350px;
-
-
+    .direccion {
+        padding-left: 10px;
     }
 
-    #flex2 {
+    /*contendedor preguntas*/
 
-        height: auto;
+    .contenedor-preguntas {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .contenedor-pregunta {
+        background-color: white;
+        padding: 10px;
+        padding-left: 70px;
+        padding-right: 50px;
+        border: 2px solid rgb(103, 0, 0);
+        border-radius: 10px;
+        transition: 0.3s ease all;
+        cursor: pointer;
+    }
+
+    /*preguntas*/
+
+    .pregunta {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
         display: flex;
-        margin-top: 10px;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        align-content: flex-start;
-
-
+        justify-content: space-between;
+        align-items: center;
     }
-    .botoncontacto{
-        background-color: rgb(169, 169, 169);
-        margin-left: 10px;
-    
-    
-        }
+
+    .pregunta img {
+        width: 15px;
+    }
+
+    .respuesta {
+        color: #808080;
+        line-height: 30px;
+        transition: 0.3s ease all;
+    }
 
     #rigths {
         color: aliceblue;
         font-size: 9px;
         padding-right: 80px;
-
-
     }
-
-    .contact {
-
-        background-color: transparent;
-
-    }
-
 
     footer {
-
         background-color: #680000f7;
+    }
 
+    /*formulario contacto*/
+
+    .contacto {
+        padding: 20px;
+    }
+    .contact {
+        background-color: transparent;
+    }
+
+    .botoncontacto {
+        background-color: rgb(169, 169, 169);
+        margin-left: 10px;
     }
 }
-
 
 /*dispositivos panalla full*/
 
-@media only screen and (min-width:600px) {
-
-
+@media only screen and (min-width: 600px) {
     /*pagina contacto*/
 
+    /*contendedor preguntas*/
 
-    .titulologo {
-        width: 100vw;
-
+    .direccion {
+        padding-left: 15px;
+    }
+    .contenedor-preguntas {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
-    .dude {
-
-
-        background-color: rgb(218, 218, 218);
-    
-
-
+    .contenedor-pregunta {
+        background-color: white;
+        padding: 10px;
+        padding-left: 70px;
+        padding-right: 50px;
+        border: 2px solid rgb(103, 0, 0);
+        border-radius: 10px;
+        transition: 0.3s ease all;
+        cursor: pointer;
     }
 
-    #flex2 {
+    /*preguntas*/
 
-        height: auto;
+    .pregunta {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
         display: flex;
-        margin-top: 10px;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        margin-left: 2%;
-
-
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .preguntas .preguntas1 .preguntas2 .preguntas3 {
-
-
-        text-align: center;
-        border-style: ridge;
-
-
+    .pregunta img {
+        width: 15px;
     }
 
-
-    .botoncontacto{
-    background-color: rgb(169, 169, 169);
-    margin-left: 10px;
-
-
+    .respuesta {
+        color: #808080;
+        line-height: 30px;
+        transition: 0.3s ease all;
     }
 
+    /*formulario contacto*/
 
+    .contacto {
+        padding-right: 800px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    .contact {
+        background-color: transparent;
+    }
 
+    .botoncontacto {
+        background-color: rgb(169, 169, 169);
+        margin-left: 10px;
+    }
 }
-
-    

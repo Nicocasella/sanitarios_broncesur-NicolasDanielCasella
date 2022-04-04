@@ -1,48 +1,38 @@
 /* Xs SM*/
 
-@media only screen and (max-width:600px) {
-
-
+@media only screen and (min-width: 400px) and (max-width: 600px) {
     /*marcas*/
-
 
     a {
         text-decoration: none;
         color: rgb(57, 35, 181);
     }
 
-
-
     body {
-
         background-color: rgb(255, 255, 255);
-
+    }
+    .direccion {
+        padding-left: 10px;
     }
 
     img {
-
         max-width: 97vw;
-
     }
 
     h1 {
         padding-top: 5px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        background-color: silver;
     }
 
-
-
     .logo {
-
         height: 100px;
         width: 100px;
-
     }
 
     footer {
         grid-area: footer;
         background-color: $secondcolor;
-
     }
 
     .menufooter {
@@ -50,120 +40,121 @@
         flex-direction: column;
         align-items: flex-end;
         font-size: 15px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
         margin-right: 2%;
-
     }
 
     #rigths {
         color: aliceblue;
         font-size: 9px;
         padding-left: 40px;
-
-
     }
 
+    /*carrusel*/
 
-    #marcas {
+    #carouselExampleControls {
+        padding-left: 10px;
+        padding-right: 20px;
+    }
 
+    /*parrafo marca*/
+    .marca {
         background-color: rgb(234, 234, 234);
-        width: 80vw;
-        margin-top: 20px;
+        margin-top: 2px;
         font-size: x-large;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         text-align: center;
-        margin-left: 55px;
-    
+        padding-right: 10px;
+    }
+}
+
+/*full screen*/
+
+@media only screen and (min-width: 600px) {
+    /*pagina marcas*/
+
+    .direccion {
+        padding-left: 15px;
     }
 
-}
+    #grillamarcas {
+        display: grid;
+        height: 1470px;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas:
+            "header header header header"
+            "h1 h1 h1 h1"
+            "imagen1 imagen2 imagen3 imagen4"
+            "imagen5 imagen6 imagen7 imagen8"
+            "imagen9 imagen10 imagen11 imagen12"
+            "footer footer footer footer";
+        align-content: space-around;
+        justify-content: space-evenly;
+        background-color: rgb(255, 255, 255);
+    }
 
+    header {
+        grid-area: header;
+    }
 
-@media only screen and (min-width:600px) {
-/*pagina marcas*/
+    .titulologo {
+        width: 100vw;
+    }
 
-#grillamarcas {
-    display: grid;
-    height: 1470px;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-areas:
-        "header header header header"
-        "h1 h1 h1 h1"
-        "imagen1 imagen2 imagen3 imagen4"
-        "imagen5 imagen6 imagen7 imagen8"
-        "imagen9 imagen10 imagen11 imagen12"
-        "footer footer footer footer";
-    align-content: space-around;
-    justify-content: space-evenly;
-    background-color: rgb(255, 255, 255);
+    h1 {
+        background-color: silver;
+    }
 
-}
+    a {
+        text-decoration: none;
+        color: rgb(57, 35, 181);
+    }
 
+    body {
+        background-color: rgb(255, 255, 255);
+    }
 
-header {
+    h1 {
+        grid-area: h1;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        width: 99vw;
+        color: $colortitulo;
+    }
 
-    grid-area: header;
-}
+    footer {
+        grid-area: footer;
+        background-color: $secondcolor;
+        height: 220px;
+    }
 
-.titulologo {
-    width: 100vw;
+    .menufooter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 15px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+        margin-right: 2%;
+    }
 
-}
+    #rigths {
+        color: aliceblue;
+        font-size: 9px;
+        padding-left: 40px;
+    }
 
+    /*carrusel*/
+    #carouselExampleControls {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-a {
-    text-decoration: none;
-    color: rgb(57, 35, 181);
-}
-
-
-
-body {
-
-    background-color: rgb(255, 255, 255);
-
-}
-
-
-h1 {
-    grid-area: h1;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 99vw;
-    color: $colortitulo;
-}
-
-
-.logo {
-
-    height: 100px;
-    width: 100px;
-
-}
-
-footer {
-    grid-area: footer;
-    background-color: $secondcolor;
-    height: 220px;
-
-}
-
-.menufooter {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-size: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-right: 2%;
-
-}
-
-#rigths {
-    color: aliceblue;
-    font-size: 9px;
-    padding-left: 40px;
-
-
-}
-
-
+    /*parrafo marca*/
+    .marca {
+        background-color: rgb(234, 234, 234);
+        margin-top: 5px;
+        font-size: x-large;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        padding-right: 20px;
+    }
 }

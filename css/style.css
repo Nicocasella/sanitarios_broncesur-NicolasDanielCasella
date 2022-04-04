@@ -5,7 +5,7 @@
 /*sassII*/
 h1 {
   color: #020202;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: oblique; }
 
 .par, .parmarcas {
@@ -35,7 +35,7 @@ h1 {
 .preguntas2 {
   font-size: 20px;
   font-weight: 500;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-stretch: expanded;
   color: #391111;
   text-align: center;
@@ -45,11 +45,13 @@ h1 {
 .preguntas3 {
   color: #051f05; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 400px) and (max-width: 600px) {
   /*pagina clientes*/
+  .direccion {
+    padding-left: 10px; }
   #grillaclientes {
     display: grid;
-    height: 1400px;
+    height: 1500px;
     width: auto;
     grid-template-columns: 100%;
     grid-template-areas: "header" "main" "footer";
@@ -68,21 +70,31 @@ h1 {
   .contenedorclient {
     margin-top: 20px;
     background-image: url(../img/clientes.jpg);
-    background-repeat: no-repeat;
-    opacity: 85%;
-    height: 620px;
+    background-repeat: repeat;
+    opacity: 95%;
+    height: 870px;
     display: flow-root;
     border: none;
-    list-style: none; }
+    list-style: none;
+    font-size: larger; }
   .tituloclient {
     background-color: silver;
     text-align: center;
-    margin-top: 8px;
+    margin-top: 5px;
     font-style: oblique;
     font-family: cursive; }
+  .parrafoclientes {
+    color: black;
+    text-align: center;
+    text-decoration: solid;
+    text-size-adjust: 30px;
+    font-size: x-large;
+    font-weight: 900;
+    font-family: sans-serif; }
   .items {
     height: 80px;
-    text-align: center; }
+    text-align: center;
+    color: black; }
   footer {
     grid-area: footer;
     background-color: #820505; }
@@ -91,15 +103,17 @@ h1 {
     flex-direction: column;
     align-items: flex-end;
     font-size: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     margin-right: 2%; } }
 
 /*dispositivos panalla full*/
 @media only screen and (min-width: 600px) {
   /*pagina clientes*/
+  .direccion {
+    padding-left: 15px; }
   #grillaclientes {
     display: grid;
-    height: 1400px;
+    height: 1600px;
     grid-template-columns: 100%;
     grid-template-areas: "header" "main" "footer";
     align-content: space-around;
@@ -108,7 +122,7 @@ h1 {
   .tituloclient {
     background-color: silver;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
     font-style: oblique;
     font-family: cursive; }
   .contenedorclient {
@@ -116,62 +130,120 @@ h1 {
     background-image: url(../img/clientes.jpg);
     background-repeat: repeat;
     background-size: 100vw;
-    opacity: 85%;
-    height: 680px;
+    opacity: 95%;
+    height: 850px;
     display: flow-root;
     border: none;
-    list-style: none; }
+    list-style: none;
+    font-size: x-large; }
   .titulo {
     width: 100vw;
     color: black; }
+  .parrafoclientes {
+    color: white;
+    text-align: center;
+    text-decoration: solid;
+    text-size-adjust: 30px;
+    font-size: x-large;
+    font-weight: 900;
+    font-family: sans-serif; }
   .items {
     height: 80px;
-    text-align: center; } }
+    text-align: center;
+    color: black; } }
 
 /* Xs SM*/
 @media only screen and (max-width: 600px) {
   /*pagina contacto*/
-  .dude {
-    background-color: #dadada;
-    background-repeat: repeat;
-    height: 1350px; }
-  #flex2 {
-    height: auto;
+  .direccion {
+    padding-left: 10px; }
+  /*contendedor preguntas*/
+  .contenedor-preguntas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .contenedor-pregunta {
+    background-color: white;
+    padding: 10px;
+    padding-left: 70px;
+    padding-right: 50px;
+    border: 2px solid #670000;
+    border-radius: 10px;
+    transition: 0.3s ease all;
+    cursor: pointer; }
+  /*preguntas*/
+  .pregunta {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
     display: flex;
-    margin-top: 10px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-content: flex-start; }
-  .botoncontacto {
-    background-color: darkgray;
-    margin-left: 10px; }
+    justify-content: space-between;
+    align-items: center; }
+  .pregunta img {
+    width: 15px; }
+  .respuesta {
+    color: #808080;
+    line-height: 30px;
+    transition: 0.3s ease all; }
   #rigths {
     color: aliceblue;
     font-size: 9px;
     padding-right: 80px; }
+  footer {
+    background-color: #680000f7; }
+  /*formulario contacto*/
+  .contacto {
+    padding: 20px; }
   .contact {
     background-color: transparent; }
-  footer {
-    background-color: #680000f7; } }
+  .botoncontacto {
+    background-color: darkgray;
+    margin-left: 10px; } }
 
 /*dispositivos panalla full*/
 @media only screen and (min-width: 600px) {
   /*pagina contacto*/
-  .titulologo {
-    width: 100vw; }
-  .dude {
-    background-color: #dadada; }
-  #flex2 {
-    height: auto;
+  /*contendedor preguntas*/
+  .direccion {
+    padding-left: 15px; }
+  .contenedor-preguntas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .contenedor-pregunta {
+    background-color: white;
+    padding: 10px;
+    padding-left: 70px;
+    padding-right: 50px;
+    border: 2px solid #670000;
+    border-radius: 10px;
+    transition: 0.3s ease all;
+    cursor: pointer; }
+  /*preguntas*/
+  .pregunta {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
     display: flex;
-    margin-top: 10px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    margin-left: 2%; }
-  .preguntas .preguntas1 .preguntas2 .preguntas3, .preguntas1 .preguntas1 .preguntas2 .preguntas3, .preguntas3 .preguntas1 .preguntas2 .preguntas3 {
-    text-align: center;
-    border-style: ridge; }
+    justify-content: space-between;
+    align-items: center; }
+  .pregunta img {
+    width: 15px; }
+  .respuesta {
+    color: #808080;
+    line-height: 30px;
+    transition: 0.3s ease all; }
+  /*formulario contacto*/
+  .contacto {
+    padding-right: 800px;
+    padding-left: 20px;
+    padding-top: 10px; }
+  .contact {
+    background-color: transparent; }
   .botoncontacto {
     background-color: darkgray;
     margin-left: 10px; } }
@@ -183,7 +255,7 @@ h1 {
 /*sassII*/
 h1 {
   color: #020202;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-style: oblique; }
 
 .par, .parmarcas {
@@ -213,7 +285,7 @@ h1 {
 .preguntas2 {
   font-size: 20px;
   font-weight: 500;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-stretch: expanded;
   color: #391111;
   text-align: center;
@@ -226,105 +298,119 @@ h1 {
 /* Xs SM*/
 @media only screen and (max-width: 600px) {
   /*index*/
-  #grilla {
+  #gridhome {
     display: grid;
     height: 1400px;
     grid-template-columns: 100%;
-    grid-template-areas: "header" "video" "map" "footer";
-    align-content: space-around;
-    justify-content: space-evenly;
+    grid-template-areas: "header" "video " "card" "map" "footer";
     background-color: white; }
-  header {
-    grid-area: header; }
   a {
     text-decoration: none;
     color: #3923b5; }
+  header {
+    grid-area: header; }
   .video {
+    height: 250px;
     grid-area: video;
-    height: 500px;
-    width: 100%; }
-  .map {
-    grid-area: map;
-    height: 200px;
-    width: 100%; }
+    width: 100vw;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 30px; }
+  .card {
+    grid-area: card;
+    width: 100%;
+    border-radius: 5px solid black;
+    padding-right: 10px;
+    padding-left: 10px; }
+  .card-img-top {
+    height: 150px; }
   body {
     background-color: #f3f2f4; }
   img {
     max-width: 100vw; }
   footer {
-    grid-area: footer;
-    background-color: #820505; }
+    background-color: #820505;
+    grid-area: footer; }
   .menufooter {
     display: flex;
+    grid-area: footer;
     flex-direction: column;
     align-items: flex-end;
     font-size: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     margin-right: 2%; }
   #rigths {
     color: aliceblue;
     font-size: 9px;
-    padding-left: 40px; } }
+    padding-left: 40px; }
+  .direccion {
+    padding-left: 10px; }
+  .map {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px; } }
 
 @media only screen and (min-width: 600px) {
-  #grilla {
-    display: grid;
-    height: 1300px;
-    grid-template-columns: 100%;
-    grid-template-areas: "header" "video" "map" "footer";
-    align-content: space-around;
-    justify-content: space-evenly;
-    background-color: white; }
-  header {
-    grid-area: header; }
+  .contenedor {
+    display: flex; }
+  .card {
+    margin: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    width: 20%; }
   .logotitulo {
     width: 100vw; }
   a {
     text-decoration: none;
     color: #3923b5; }
   .video {
-    grid-area: video;
-    height: 450px;
-    width: 100%;
-    margin-top: 5px; }
+    height: 350px;
+    width: 98.5vw;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px; }
   .map {
-    grid-area: map;
-    height: 200px;
-    width: 100%;
-    margin-top: 4px; }
+    height: 150px;
+    padding-left: 15px;
+    padding-right: 15px; }
   body {
     background-color: #f3f2f4; }
   footer {
-    grid-area: footer;
     background-color: #820505;
     margin-top: 5px; }
   .menufooter {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     margin-right: 2%; }
   #rigths {
     color: aliceblue;
     font-size: 9px;
     padding-left: 40px; }
-  p {
-    margin-right: 3%;
-    margin-right: 3%; } }
+  .direccion {
+    padding-left: 15px; } }
 
 /* Xs SM*/
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 400px) and (max-width: 600px) {
   /*marcas*/
   a {
     text-decoration: none;
     color: #3923b5; }
   body {
     background-color: white; }
+  .direccion {
+    padding-left: 10px; }
   img {
     max-width: 97vw; }
   h1 {
     padding-top: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: silver; }
   .logo {
     height: 100px;
     width: 100px; }
@@ -336,23 +422,30 @@ h1 {
     flex-direction: column;
     align-items: flex-end;
     font-size: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     margin-right: 2%; }
   #rigths {
     color: aliceblue;
     font-size: 9px;
     padding-left: 40px; }
-  #marcas {
+  /*carrusel*/
+  #carouselExampleControls {
+    padding-left: 10px;
+    padding-right: 20px; }
+  /*parrafo marca*/
+  .marca {
     background-color: #eaeaea;
-    width: 80vw;
-    margin-top: 20px;
+    margin-top: 2px;
     font-size: x-large;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    margin-left: 55px; } }
+    padding-right: 10px; } }
 
+/*full screen*/
 @media only screen and (min-width: 600px) {
   /*pagina marcas*/
+  .direccion {
+    padding-left: 15px; }
   #grillamarcas {
     display: grid;
     height: 1470px;
@@ -365,6 +458,8 @@ h1 {
     grid-area: header; }
   .titulologo {
     width: 100vw; }
+  h1 {
+    background-color: silver; }
   a {
     text-decoration: none;
     color: #3923b5; }
@@ -372,12 +467,9 @@ h1 {
     background-color: white; }
   h1 {
     grid-area: h1;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     width: 99vw;
     color: black; }
-  .logo {
-    height: 100px;
-    width: 100px; }
   footer {
     grid-area: footer;
     background-color: #820505;
@@ -387,15 +479,29 @@ h1 {
     flex-direction: column;
     align-items: flex-end;
     font-size: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     margin-right: 2%; }
   #rigths {
     color: aliceblue;
     font-size: 9px;
-    padding-left: 40px; } }
+    padding-left: 40px; }
+  /*carrusel*/
+  #carouselExampleControls {
+    padding-left: 20px;
+    padding-right: 20px; }
+  /*parrafo marca*/
+  .marca {
+    background-color: #eaeaea;
+    margin-top: 5px;
+    font-size: x-large;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-right: 20px; } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 400px) and (max-width: 600px) {
   /*pagina nosotros*/
+  .direccion {
+    padding-left: 10px; }
   #grillanosotros {
     display: grid;
     height: 1400px;
@@ -435,7 +541,7 @@ h1 {
     flex-direction: column;
     align-items: flex-end;
     font-size: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     margin-right: 2%; }
   #rigths {
     color: aliceblue;
@@ -445,6 +551,8 @@ h1 {
 /*dispositivos panalla full*/
 @media only screen and (min-width: 600px) {
   /*pagina nosotros*/
+  .direccion {
+    padding-left: 15px; }
   #grillanosotros {
     display: grid;
     height: 1500px;
@@ -491,117 +599,7 @@ h1 {
     flex-direction: column;
     align-items: flex-end;
     font-size: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-right: 2%; }
-  #rigths {
-    color: aliceblue;
-    font-size: 9px;
-    padding-left: 40px; } }
-
-/* Xs SM*/
-@media only screen and (max-width: 600px) {
-  /*poductos*/
-  #grillaproductos {
-    display: grid;
-    height: 1250px;
-    width: auto;
-    grid-template-columns: 100%;
-    grid-template-areas: "header" "h1" "main" "footer";
-    align-content: space-around;
-    justify-content: space-evenly;
-    background-color: white; }
-  header {
-    grid-area: header; }
-  .contenedorproductos:hover {
-    text-decoration: overline;
-    color: black; }
-  .contenedorproductos {
-    text-decoration: overline;
-    color: #01136a; }
-  .contenedorlinks {
-    background-image: url(../img/istockphoto-519914916-1024x1024.jpg);
-    height: 600px;
-    list-style: none; }
-  body {
-    background-color: white; }
-  img {
-    max-width: 100vw; }
-  h1 {
-    grid-area: h1;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #040403;
-    font-size: xx-large;
-    background-color: #c4c4c4; }
-  .items {
-    font-size: larger;
-    list-style: none; }
-  footer {
-    grid-area: footer;
-    background-color: #820505;
-    margin-top: 5px; }
-  .menufooter {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-size: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-right: 2%; }
-  #rigths {
-    color: aliceblue;
-    font-size: 9px;
-    padding-left: 40px; } }
-
-/*dispositivos panalla full*/
-@media only screen and (min-width: 600px) {
-  /*poductos*/
-  #grillaproductos {
-    display: grid;
-    height: 1400px;
-    width: auto;
-    grid-template-columns: 100%;
-    grid-template-areas: "header" "h1" "main" "footer";
-    align-content: space-around;
-    justify-content: space-evenly;
-    background-color: white; }
-  header {
-    grid-area: header; }
-  .contenedorproductos {
-    text-decoration: overline;
-    color: black;
-    font-weight: bolder; }
-  .contenedorproductos:hover {
-    text-decoration: overline;
-    color: rgba(19, 5, 143, 0.55);
-    font-weight: bolder; }
-  .contenedorlinks {
-    background-image: url(../img/istockphoto-519914916-1024x1024.jpg);
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  body {
-    background-color: white; }
-  img {
-    max-width: 100vw; }
-  h1 {
-    grid-area: h1;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #040403;
-    font-size: xx-large;
-    background-color: #c4c4c4;
-    color: black; }
-  .items {
-    font-size: larger; }
-  footer {
-    grid-area: footer;
-    background-color: #820505;
-    margin-top: 5px; }
-  .menufooter {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-size: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     margin-right: 2%; }
   #rigths {
     color: aliceblue;
@@ -615,7 +613,7 @@ h1 {
 .primary {
   background-color: #9f0404; }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 200px) {
   .navbar {
     background-color: #9f0404; }
   .navbar .navbar-brand {
@@ -632,7 +630,7 @@ h1 {
     color: #00cccc; }
   .navbar .navbar-nav .nav-link {
     color: #000000;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     margin: 0 0.25em; }
   .navbar .navbar-nav .nav-link:not(.disabled):hover,
   .navbar .navbar-nav .nav-link:not(.disabled):focus {

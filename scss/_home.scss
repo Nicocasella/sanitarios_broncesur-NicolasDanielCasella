@@ -1,164 +1,135 @@
-
-
 /* Xs SM*/
 
-@media only screen and (max-width:600px) {
-
-
+@media only screen and (max-width: 600px) {
     /*index*/
 
-    #grilla {
+    #gridhome {
         display: grid;
         height: 1400px;
         grid-template-columns: 100%;
-        grid-template-areas: "header"
-            "video"
+        grid-template-areas:
+            "header"
+            "video "
+            "card"
             "map"
             "footer";
-        align-content: space-around;
-        justify-content: space-evenly;
         background-color: rgb(255, 255, 255);
-
     }
-
-
-    header {
-
-        grid-area: header;
-    }
-
 
     a {
         text-decoration: none;
         color: rgb(57, 35, 181);
     }
 
+    header {
+        grid-area: header;
+    }
 
     .video {
+        height: 250px;
         grid-area: video;
-        height: 500px;
-        width: 100%;
-
+        width: 100vw;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 30px;
     }
 
-
-    .map {
-
-        grid-area: map;
-        height: 200px;
+    .card {
+        grid-area: card;
         width: 100%;
-
+        border-radius: 5px solid black;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
+    .card-img-top {
+        height: 150px;
+    }
 
     body {
-
         background-color: $maincolor;
-
     }
 
     img {
-
         max-width: 100vw;
-
     }
 
-
     footer {
-        grid-area: footer;
         background-color: $secondcolor;
-
+        grid-area: footer;
     }
 
     .menufooter {
         display: flex;
+        grid-area: footer;
         flex-direction: column;
         align-items: flex-end;
         font-size: 15px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
         margin-right: 2%;
-
     }
 
     #rigths {
         color: aliceblue;
         font-size: 9px;
         padding-left: 40px;
+    }
 
+    .direccion {
+        padding-left: 10px;
+    }
 
+    .map {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
     }
 }
 
-@media only screen and (min-width:600px) {
-
-
-
-    #grilla {
-        display: grid;
-        height: 1300px;
-        grid-template-columns: 100%;
-        grid-template-areas: "header"
-            "video"
-            "map"
-            "footer";
-        align-content: space-around;
-        justify-content: space-evenly;
-        background-color: rgb(255, 255, 255);
-
+@media only screen and (min-width: 600px) {
+    .contenedor {
+        display: flex;
     }
 
-
-    header {
-        grid-area: header;
-
+    .card {
+        margin: 15px;
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 5px;
+        position: relative;
+        overflow: hidden;
+        width: 20%;
     }
 
     .logotitulo {
         width: 100vw;
-
     }
-
-
 
     a {
         text-decoration: none;
         color: rgb(57, 35, 181);
     }
 
-
-
     .video {
-        grid-area: video;
-        height: 450px;
-        width: 100%;
+        height: 350px;
+        width: 98.5vw;
         margin-top: 5px;
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
-
 
     .map {
-
-
-        grid-area: map;
-        height: 200px;
-        width: 100%;
-        margin-top: 4px;
-
+        height: 150px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
-
-
-
 
     body {
-
         background-color: $maincolor;
-
     }
 
-
-
-
     footer {
-        grid-area: footer;
         background-color: $secondcolor;
         margin-top: 5px;
     }
@@ -167,27 +138,17 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
         margin-right: 2%;
-
     }
 
     #rigths {
         color: aliceblue;
         font-size: 9px;
         padding-left: 40px;
-
-
-
     }
 
-
-    p{
-
-margin-right: 3%;
-margin-right: 3%;
-
-
+    .direccion {
+        padding-left: 15px;
     }
-
 }
