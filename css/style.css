@@ -51,7 +51,7 @@ h1 {
     padding-left: 10px; }
   #grillaclientes {
     display: grid;
-    height: 1500px;
+    height: 1800px;
     width: auto;
     grid-template-columns: 100%;
     grid-template-areas: "header" "main" "footer";
@@ -72,7 +72,7 @@ h1 {
     background-image: url(../img/clientes.jpg);
     background-repeat: repeat;
     opacity: 95%;
-    height: 870px;
+    height: 1100px;
     display: flow-root;
     border: none;
     list-style: none;
